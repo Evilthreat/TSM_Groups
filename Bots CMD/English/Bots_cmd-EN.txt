@@ -1,0 +1,90 @@
+__**Bots Commands**__
+
+__**Rythm Bot**__
+
+__**Music Commands**__
+
+**+play**       Plays a song with the given name or url.
+**+pause**       Pauses the currently playing track.
+**+skip**       Skips the currently playing song.
+**+shuffle**       Shuffles the queue.
+**+lyrics**       Gets the lyrics of the current playing song
+**+forward**       Forwards by a certain amount in the current track.
+**+skipto**       Skips to a certain position in the queue.
+**+replay**       Reset the progress of the current song
+**+volume**       Check or change the current volume.
+**+rewind**       Rewinds by a certain amount in the current track.
+**+playtop**       Like the play command, but queues from the top.
+**+playskip**       Adds a song to the top of the queue then skips to it.
+**+loop**       Loop the currently playing song.
+**+resume**       Removes a certain entry from the queue.
+
+__**General Commands**__
+
+**+join**       Summons the bot to your voice channel.
+**+disconnect**       Disconnect the bot from the voice channel it is in.
+**+np**       Shows what song the bot is currently playing.
+**+aliases**       List command aliases.
+**+seek**       Seeks to a certain point in the current track.
+**+soundcloud**       Searches soundcloud for a song
+**+remove**       Removes a certain entry from the queue.
+**+loopqueue**       Loops the whole queue.
+**+search**       Searches YouTube for results of a URL.
+**+move**       Moves a certain song to the first position in the queue or to a chosen position
+**+clear**        Clears the queue.
+**+removedupes**       Removes duplicate songs from the queue.
+**+queue**       View the queue. To view different pages, type the command with the specified page number after it (queue 2).
+**+leavecleanup**       Removes absent user's songs from the Queue.
+
+__**Rythm 2**__
+
+Prefix *
+
+__**Jeeves**__
+
+__**World of Warcraft**__
+
+**?auth**       Give Jeeves permission to access to your toons.
+**?toon view**          Display a list with the 12 best characters in your account.
+**?toon set-main** <character>      Tell Jeeves which character is your main.
+**?toon hide** <character>     Tell Jeeves which character should be flagged as hidden.
+**?toon sync-account**         Re-syncs your character sheet (Only available within 24hrs of an **?auth**, re-run **?auth** instead of this if its past 24hrs).
+**?lookup** <character> <realm> <region>      You can lookup different information about a WoW player or guild (The name of the guild must follow this example "<Shielded Lions>"). You  can also add special parameters:
+                        *--raider* (Shows a raiding info)
+                        *--mythic+* (Shows mythic+ info)
+                        *--transmog* (Generates a screenshot of the characters appearance)
+**?pricecheck** <item>        Get a Pricecheck for [Item] on your realm.
+**?pc** <server name> <item>         Get a Pricecheck for [Item] on another realm. Example of server name: us-proudmoore.
+**?wa** <argument>        Find the WeakAuras you need.
+**?guide** <argument>     Posts a link of the desired Wowhead guide.
+**?wowhead** <argument>        Lookup the information you need in Wowhead.
+**?keystone** <character> <dungeon> <level>         Share your keystone/s with your guild members.
+
+__**World Info**__
+
+**?affix** <region> <argument>        Get the affixes of this week. Valid arguments: schedule and <affix name>
+**?archeology** <argument>          Display current archeology quests and upcoming ones. Example: **?archaeology Spirit of Eche'ro** tells you how long till the next time this solve is up.
+**?fishing** <argument>        Shows the fishing friend that is up and the date/s which the other fishing friends will be active. A valid argument could be the name of a fishing friend.
+**?ginvasion** <region> <argument>        Displays the current invasion for this week. A valid argument could be the name of the desired boss, no need to specify <region>.
+**?karazhan** <region> <argument>        Shows you the current mythic Karazhan Opera Boss. A valid argument could be the name of the desired boss, no need to specify <region>.
+**?realmstatus** <server> <region>        Quickly check the realm status of your or any other realm from anywhere.
+**?worldboss** <argument>         This command is a Broken Isles world boss rotation helper. A valid argument could be the name of the desired boss.
+**?token** <region>              Lookup the price for the WoW token for any region with live data.
+**?Faction-assault** <argument>                Shows the status and timers for Faction Assaults in your region. A valid argument could be the name of the desired area, like Zuldazar.
+
+__**Audio Commands**__
+
+**?play** <songtrack> --time <time> --volume <vol%> --playnow       Searches for songs with time and volume requested.
+**?play** <link>       Plays YouTube songs.
+**?play** <playlist>       Plays a YouTube playlist.
+**?playlist**       View the queue.
+**?playlist clear**       Clears queue.
+**?stop**       Stops the currently playing song.
+**?skip**       Skips the currently playing song.
+
+__**Radio**__
+
+Check the list of available online radios: http://shoutcast.com/
+
+**?radio** <category> <station>       Searches for a radio station in that category.
+**?radio** <category>       Searches for songs in that category.

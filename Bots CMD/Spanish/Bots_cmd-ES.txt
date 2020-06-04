@@ -1,0 +1,112 @@
+__**Comandos**__ (Son ordenes que les podemos dar a los bots)
+
+__***MEE6 Bot***__
+
+**!ban**    `Se le prohibe al usuario acceder al servidor`
+**!tempban**    `Se le prohibe temporalmente al usuario acceder al servidor`
+**!clear**    `Borra un mensaje del canal`
+**!infractions**	`Muestra las infracciones de un usuario`
+**!kick**	`Saca a un usuario del servidor`
+**!mute**	`Se silencia a un usuario`
+**!tempmute**	`Se silencia temporalmente a un usuario`
+**!role-info**	`Muestra informacion de un rol particular`
+**!server-info**	`Muestra informacion del servidor`
+**!slowmode**	`Habilita/Deshabilita modo lento en un canal`
+**!unmute**	`El usuarui deja de estar silenciado`
+**!user-info**	`Muestra informacion de un usuario particular`
+**!warn**	`Advierte al usuario`
+**!levels**	`Muestra un link a la tabla de clasificacion`
+**!rank**	`Muestra tu rango o el de otro usuario`
+**!help**	`Muestra un listado de todos los comandos disponibles`
+
+
+__***Rythm Bot***__
+
+__**Music Commands**__
+
+**+play**	`Reproduce una canción con un nombre o una URL`
+**+pause**	`Pausa la canción que se esta reproduciendo`
+**+skip**	`Salta la cancion que se esta reproduciendo`
+**+shuffle**	`Mezcla la cola de canciones`
+**+lyrics**	`Muetsra la letra de la cancion que se esta reproduciendo`
+**+forward**	`Adelanta una cierta cantidad de tiempo la canción que se esta reproduciendo`
+**+skipto**	`Salta a una determinada posicion de la cola de canciones`
+**+replay**	`Reinicia la ultima cancion`
+**+volume**	`Muestra o cambia el volume`
+**+rewind**	`Retrocede una cierta cantidad de tiempo la canción que se esta reproduciendo`
+**+playtop**	`Como el comando Reproducir, pero reproduce desde el final`
+**+playskip**	`Añade una cancion al final de la cola y la salta`
+**+loop**	`Vuelve a reproducir la ultima cancion`
+**+resume**	`Continua reproduciendo la canción`
+
+__**General Commands**__
+
+**+join**	`Convoca al bot al canal de voz`
+**+disconnect**	`Desconecta al bot del canal en el que está`
+**+np**	`Muesta la cancion que se esta reproduciendo`
+**+aliases**	`Listado de comandos alias`
+**+seek**	`Busca un punto en la actual cancion`
+**+soundcloud**	`Busca en Soundclod por una cancion`
+**+remove**	`Remueve una cancion que esta en cola`
+**+loopqueue**	`Vuelve a reproducir todo la cola de canciones`
+**+search**	`Busca en YouTube por resultados de una URL`
+**+move**	`Mueve una canción al primer lugar de la cola o a una posición a elegir`
+**+clear**	`Limpia la cola de canciones`
+**+removedupes**	`Remueve canciones duplicada en la cola de canciones`
+**+queue**	`Muestra la cola de canciones. Para cambiar de pagina escribe el comando con el numero de pagina (+queue 2)`
+**+leavecleanup**	`Remueve las canciones de la cola de canciones, de un usuario ausente`
+
+
+__**Info Commands**__
+
+**+stats**	`Muestra estadisticas del bot`
+**+donate**	`Información para donar al soporte de !Rythm`
+**+shard**	`Muestra donde estas`
+**+info**	`Información sobre Rythm`
+**+settings prefix**	`Puedes cambiar el prefijo`
+**+invite**	`Links!`
+**+clean**	`Borra los mensajes y comandos del bot`
+**+settings**	`Cambia las configuraciones de Rythm`
+**+ping**	`Muestra el tiempo de respuesta del bot a Discord`
+
+
+
+__***Spotify Bot***__
+
+__**Spotify API Commands**__
+
+**S/song (Song Name)**	`Busca una canción en Spotify`
+**S/artists (Artists Name)**	`Busca un artista en Spotify`
+**S/album**	`Busca un álbum en Spotify`
+
+__**Music Commands**__
+
+**S/play (Song Name Of YT)**	`Añade una canción a la cola`
+**S/pause**	`Pausa la canción que se esta reproduciendo`
+**S/skip**	`Salta la canción que se esta reproduciendo`
+**S/status**	`Muesta el estado de la música`
+**S/volume [1-10]**	`Cambia el volume`
+**S/shuffle**	`Mezcla la cola de canciones`
+**S/resume**	`Continúa la reproducción de la última canción`
+**S/queue [page]**	`Lista la cola de canciones`
+
+__**General Commands**__
+
+**S/stats**	`Muestra estadísticas del bot`
+**S/commands**	`Muestra el listado de todos los comandos`
+**S/donate**	`Muestra links donde podes hacer donaciones al soporte técnico`
+**S/feedback**	`Puedes dar una devolución a los desarrolladores`
+**S/invite**	`Muestra links de invitaciones`
+**S/uptime**	`Muestra cuanto tiempo ha estado reproduciendo sin parar`
+
+__**Info Commands**__
+
+**S/avatar**	`Muestra tu avatar o el de algún usuario`
+**S/channel**	`Muestra todos los canales o te muestra informacón de uno`
+**S/discrim**	`Busca a otros usuarios con cierto discriminador`
+**S/edits**	`Muestra las recientes ediciones de un mensaje`
+**S/emoji**	`Muestra tu emoji mas grande, o envia todos los emojis`
+**S/inrole**	`Muestra todos los miembros de un rol`
+**S/role**	`Muestra una descripción detallada de un rol o lista todos los roles`
+**S/server**	`Muestra descripción del servidor`
+**S/user**	`Muestra detalles de un usuario`
