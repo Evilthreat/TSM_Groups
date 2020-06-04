@@ -1,0 +1,77 @@
+VER 3 0100000000000011 "Black Ox Statue" "627607"
+#showtooltip Summon Black Ox Statue
+/click [mod:alt] TotemFrameTotem1 RightButton
+/stopmacro [mod:alt]
+/cast Summon Black Ox Statue
+END
+VER 3 0100000000000003 "Brewmaster" "608951"
+/equipset Brewmaster
+/run SetSpecialization(1)
+END
+VER 3 0100000000000008 "Cancel Aura" "135964"
+/cancelaura Blessing of Protection
+END
+VER 3 0100000000000007 "Chi Wave" "606541"
+#showtooltip Chi Wave
+/use [nomod, @player] Chi Wave
+/use [mod:shift] Chi Wave
+END
+VER 3 0100000000000005 "Detox" "460692"
+#showtooltip Detox
+/cast [@target,help,nodead] Detox;Detox
+END
+VER 3 010000000000000D "Enveloping Mist" "775461"
+#showtooltip Enveloping Mist
+/cast [@target][@focus] Enveloping Mist
+END
+VER 3 0100000000000001 "Mistweaver" "608952"
+/equipset Mistweaver
+/run SetSpecialization(2)
+END
+VER 3 0100000000000009 "Provoke" "620830"
+#showtooltip Provoke
+/cast [@target,harm,nodead][]Provoke
+END
+VER 3 010000000000000A "Provoke2" "620830"
+#showtooltip Provoke
+/target Black Ox Statue
+/cast Provoke
+/targetlasttarget
+END
+VER 3 010000000000000B "Renewing Mist" "627487"
+#showtooltip Renewing Mist
+/cast [@target][@focus] Renewing Mist
+/focus
+END
+VER 3 010000000000000F "Rising Sun Kick" "642415"
+#showtooltip
+/stopmacro [channeling:Essence Font]
+/cast Rising Sun Kick
+END
+VER 3 010000000000000E "Rushing JadeWind" "606549"
+#showtooltip 
+/cancelaura [mod:shift] Rushing Jade Wind
+/cast [nomod:shift] Rushing Jade Wind
+END
+VER 3 010000000000000C "Soothing Mist" "606550"
+#showtooltip Soothing Mist
+/cast [@target][@focus] Soothing Mist
+END
+VER 3 0100000000000010 "Tiger Palm" "606551"
+#showtooltip Tiger Palm
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Tiger Palm
+END
+VER 3 0100000000000006 "Tiger's Lust" "651727"
+#showtooltip Tiger's Lust
+/cast [@target,exists,nodead,help][] Tiger's Lust
+END
+VER 3 0100000000000004 "Vivify" "1360980"
+#showtooltip Vivify
+/cast [@target,exists,nodead,help][] Vivify
+END
+VER 3 0100000000000002 "Windwalker" "608953"
+/equipset Windwalker
+/run SetSpecialization(3)
+END

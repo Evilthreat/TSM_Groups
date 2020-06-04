@@ -1,0 +1,51 @@
+VER 3 0100000000000009 "Blood" "135770"
+/equipset Blood
+/run SetSpecialization(1)
+END
+VER 3 010000000000000C "Cancel Blessing" "135964"
+/cancelaura Blessing of Protection
+END
+VER 3 010000000000000B "Death and Decay" "136144"
+#showtooltip Death and Decay
+/cast [@player] Death and Decay
+END
+VER 3 0100000000000006 "Death Grip" "237532"
+#showtooltip Death Grip
+/cast [@target,exists] Death Grip
+END
+VER 3 010000000000000D "Death Pact & ERW" "136146"
+#show Death Pact & ERW
+/cast Death Pact
+/cast Empower Rune Weapon
+END
+VER 3 0100000000000005 "Dismiss Pet" "136063"
+/petdismiss [pet]
+END
+VER 3 0100000000000008 "Frost" "135773"
+/equipset Frost
+/run SetSpecialization(2)
+END
+VER 3 010000000000000A "Gorefiends Grasp" "538767"
+#showtooltip Gorefiend's Grasp
+/cast [@mouseover,exists,nodead][@player] Gorefiend's Grasp
+END
+VER 3 0100000000000007 "Howling Blast" "135833"
+#showtooltip Howling Blast
+/cast [@target] Howling Blast
+END
+VER 3 0100000000000003 "Mind Freeze" "237527"
+#showtooltip Mind Freeze
+/cast [@target,harm,nodead][] Mind Freeze
+END
+VER 3 0100000000000004 "Outbreak" "348565"
+#showtooltip Outbreak
+/cast [target=mouseover,exists] Outbreak; Outbreak
+END
+VER 3 0100000000000002 "Raise Ally" "136143"
+#showtooltip Raise Ally
+/cast [@target,help,dead][]Raise Ally
+END
+VER 3 0100000000000001 "Unholy" "135775"
+/equipset Unholy
+/run SetSpecialization(3)
+END

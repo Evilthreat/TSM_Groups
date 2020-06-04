@@ -1,0 +1,56 @@
+Vengeance Macros
+-------------------------------
+
+#showtooltip
+/cast [@target,harm,nodead][] Disrupt
+
+/cancelaura Blessing of Protection
+
+#showtooltip
+/cast [@target,harm,nodead][] Consume Magic
+
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Flame; [nomod, @player] Sigil of Flame
+
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Misery; [nomod, @player] Sigil of Misery
+
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Silence; [nomod, @player] Sigil of Silence
+
+#showtooltip Sigil of Chains
+/cast [mod:shift, @cursor] Sigil of Chains; [nomod, @player] Sigil of Chains
+/cast [mod:shift, @cursor] Sigil of Misery; [nomod, @player] Sigil of Misery
+
+#showtooltip
+/cast [mod:ctrl, @player] Infernal Strike; [nomod, @cursor] Infernal Strike
+
+#showtooltip
+/cast [@target,harm,nodead][]Torment
+
+#showtooltip
+/cast [@target,harm,nodead][]Tormentor
+
+/equipset Vengeance
+/run SetSpecialization(2)
+
+
+Havoc Macros
+-----------------------------
+
+#showtooltip
+/cast [mod:ctrl, @player] Metamorphosis; [nomod, @cursor] Metamorphosis
+
+#showtooltip
+/cancelaura Netherwalk
+
+/equipset Havoc
+/run SetSpecialization(1)
+
+#showtooltip
+/stopmacro [channeling:Eye Beam]
+/stopmacro [channeling:Fel Barrage]
+/cast [@player] Metamorphosis
+
+
+

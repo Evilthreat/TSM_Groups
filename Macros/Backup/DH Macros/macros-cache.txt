@@ -1,0 +1,56 @@
+VER 3 0100000000000007 "Cancel Aura" "135964"
+/cancelaura Blessing of Protection
+END
+VER 3 0100000000000002 "Consume Magic" "828455"
+#showtooltip Consume Magic
+/cast [@target,harm,nodead][] Consume Magic
+END
+VER 3 0100000000000001 "Disrupt" "1305153"
+#showtooltip Disrupt
+/cast [@target,harm,nodead][] Disrupt
+END
+VER 3 010000000000000A "Havoc" "1247264"
+/equipset Havoc
+/run SetSpecialization(1)
+END
+VER 3 0100000000000004 "Infernal Strike" "1344650"
+#showtooltip
+/cast [mod:ctrl, @player] Infernal Strike; [nomod, @cursor] Infernal Strike
+END
+VER 3 010000000000000B "Metamorphosis" "1247263"
+#showtooltip
+/cast [mod:ctrl, @player] Metamorphosis; [nomod, @cursor] Metamorphosis
+END
+VER 3 010000000000000C "Metamorphosis" "1247262"
+#showtooltip
+/cast [mod:ctrl, @player] Metamorphosis; [nomod, @cursor] Metamorphosis
+END
+VER 3 010000000000000D "Netherwalk" "463284"
+#showtooltip
+/cancelaura Netherwalk
+END
+VER 3 0100000000000003 "Sigil of Flame" "1344652"
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Flame; [nomod, @player] Sigil of Flame
+END
+VER 3 0100000000000006 "Sigil of Misery" "1418287"
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Misery; [nomod, @player] Sigil of Misery
+END
+VER 3 0100000000000005 "Sigil of Silence" "1418288"
+#showtooltip
+/cast [mod:shift, @cursor] Sigil of Silence; [nomod, @player] Sigil of Silence
+END
+VER 3 010000000000000E "Sigils" "1344652"
+#showtooltip Sigil of Chains
+/cast [mod:shift, @cursor] Sigil of Chains; [nomod, @player] Sigil of Chains
+/cast [mod:shift, @cursor] Sigil of Misery; [nomod, @player] Sigil of Misery
+END
+VER 3 0100000000000008 "Torment" "1344654"
+#showtooltip Torment
+/cast [@target,harm,nodead][]Torment
+END
+VER 3 0100000000000009 "Vengeance" "1247265"
+/equipset Vengeance
+/run SetSpecialization(2)
+END

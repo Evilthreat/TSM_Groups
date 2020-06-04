@@ -1,0 +1,55 @@
+Frost Macros
+-------------------------------
+
+/equipset Frost
+/run SetSpecialization(2)
+
+#showtooltip Breath of Sindragosa
+/cast !Breath of Sindragosa
+
+#showtooltip Mind Freeze
+/cast [@cursor, exists][@focus, harm, nodead][@target]Mind Freeze; Mind Freeze
+
+
+Blood Macros
+-------------------------------
+
+/equipset Blood
+/run SetSpecialization(1)
+
+#showtooltip Asphyxiate
+/cast [@cursor, exists] Asphyxiate; Asphyxiate
+
+/cancelaura Blessing of Protection
+
+#showtooltip Death and Decay
+/cast [@player] Death and Decay
+
+#showtooltip Death Grip
+/cast [@target, exists][@focus]Death Grip
+
+
+
+Unholy Macros
+-------------------------------
+/equipset Unholy
+/run SetSpecialization(3)
+
+#showtooltip
+/cast Leap
+/petattack
+/startattack
+
+/petdismiss
+
+#showtooltip Gorefiend's Grasp
+/cast [@player] Gorefiend's Grasp
+
+#showtooltip Howling Blast
+/cast [@target, harm,nodead][@cursor,exists] Howling Blast
+
+#showtooltip Outbreak
+/cast [@cursor, exists] Outbreak; Outbreak
+
+#showtooltip Raise Ally
+/cast [@cursor,help][@target]Raise Ally

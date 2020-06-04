@@ -1,0 +1,227 @@
+VER 3 0000000000000071 "Alpaca-Voldun1" "2916284"
+/way Vol'dun 26.4 52.5 Alpaca 1
+/way Vol'dun 28.0 65.0 Alpaca 2
+/way Vol'dun 31.1 67.3 Alpaca 3
+/way Vol'dun 42.0 60.0 Alpaca 4
+/way Vol'dun 43.0 69.0 Alpaca 5
+/way Vol'dun 51.1 85.9 Alpaca 6
+/way Vol'dun 52.5 89.0 Alpaca 7
+/way Vol'dun 54.0 83.0 Alpaca 8
+END
+VER 3 0000000000000072 "Alpaca-Voldun2" "2916284"
+/way Vol'dun 54.6 53.2 Alpaca 9
+/way Vol'dun 55.0 73.0 Alpaca 10
+/way Vol'dun 42.0 60.0 Alpaca 11
+END
+VER 3 000000000000003A "Back or Ring" "2373977"
+#showtooltip
+/use 15
+/use 11
+/use 12
+END
+VER 3 000000000000005E "Bark" "1033476"
+/bark
+END
+VER 3 0000000000000044 "break" "611422"
+/run SendChatMessage("Low on Mana. Please a sec", ((UnitInRaid("player")and "RAID")or(GetNumPartyMembers()>0 and "PARTY")or "AFK")); 
+END
+VER 3 0000000000000035 "Cancel Pull" "132319"
+/pull 0
+/clearfocus
+END
+VER 3 0000000000000045 "chat" "642414"
+/run SendChatMessage(SecureCmdOptionParse("[mod:ctrl]Low on Mana, please wait;Ty all"),(UnitIsGroupLeader("player")or UnitIsGroupAssistant("player"))and"RAID_WARNING"or"INSTANCE_CHAT")
+END
+VER 3 0000000000000061 "Congratz!" "3196265"
+/g Congratulations!! {rt1}
+END
+VER 3 0000000000000076 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Consume Magic;  [@mouseover,exists,mod:ctrl] Consume Magic; [@mouseover,exists,mod:shift] Consume Magic
+END
+VER 3 0000000000000067 "Dismiss" "644389"
+/dismount
+/cast Slow Fall
+/petdismiss
+END
+VER 3 0000000000000036 "Everything" "133276"
+#showtooltip
+/use 2
+/use 6
+/use 11
+/use 12
+/use 13
+/use 14
+END
+VER 3 000000000000002E "Expediciones" "2178531"
+/run SendChatMessage(SecureCmdOptionParse("Grupo para Expediciones Miticas //wisp"), "channel", nil, "1")
+END
+VER 3 000000000000001F "Follow Target" "2125377"
+/script SetRaidTargetIcon("target",4)
+/focus
+END
+VER 3 0000000000000050 "GRM_Roster" "inv_bannerpvp_02"
+/run GuildFrame_Toggle()
+/run GuildFrame_TabClicked ( GuildFrameTab2 )
+END
+VER 3 0000000000000058 "GRM_Tool" "INV_MISC_QUESTIONMARK"
+END
+VER 3 000000000000006C "Guild Intro" "3196264"
+/g You'll find guild rules in our Discord Server, invitation link is in Guild Information. Once you are done reading them, let an Officer know and you'll be promoted having access to guild bank and guild repairs. 
+END
+VER 3 000000000000006F "Heal" "134206"
+/use Cenarion Waard
+/use Swiftmend
+END
+VER 3 0000000000000038 "Healer Profile" "2103798"
+/suf profile Healer
+END
+VER 3 000000000000001C "Hello & Thanks" "3192688"
+/run SendChatMessage(SecureCmdOptionParse("[mod:ctrl] Hey all! :); Ty all"),(UnitIsGroupLeader("player")or UnitIsGroupAssistant("player"))and"PARTY"or"INSTANCE_CHAT"or"RAID_WARNING", nil)
+END
+VER 3 000000000000005B "HHTD GUI" "524353"
+/hhtdg
+END
+VER 3 000000000000005C "HHTD Post" "132334"
+/hhtdp
+END
+VER 3 0000000000000011 "Hide Chat" "132529"
+/run _CHATHIDE=not _CHATHIDE for i=1,NUM_CHAT_WINDOWS do for _,v in pairs{"","Tab"}do local f=_G["ChatFrame"..i..v]if _CHATHIDE then f.v=f:IsVisible()end f.ORShow=f.ORShow or f.Show f.Show=_CHATHIDE and f.Hide or f.ORShow if f.v then f:Show()end end end
+END
+VER 3 0000000000000015 "Hide Chat Button" "132533"
+/run local r=ChatFrameMenuButton if r:IsShown()then r:Hide()else r:Show();end
+END
+VER 3 0000000000000012 "Hide Quests" "132530"
+/run local n=ObjectiveTrackerFrame if n:IsVisible()then n:Hide();else n:Show();end
+END
+VER 3 0000000000000074 "Hunter Pet" "2032598"
+#showtooltip
+/cast [target=pet,exists,dead] Revive Pet; [target=pet,exists]Mend Pet; [target=pet,noexists] Call Pet 
+END
+VER 3 0000000000000073 "IvoryCS" "3229535"
+/tar Ivory Cloud Serpent
+END
+VER 3 000000000000001E "Kill Target" "132177"
+/script SetRaidTargetIcon("target",8)
+/focus
+END
+VER 3 0000000000000063 "KillFarm - Panda" "2000853"
+/p KILL! KILL!
+/p KILL! KILL!
+/break 20
+END
+VER 3 0000000000000069 "LF Guild" "2199766"
+/run SendChatMessage(SecureCmdOptionParse("Dark Lady is recruiting. This is a casual guild for those who work, study or dont have much time to play. The perfect place to make friends and have a great time! Ask for an inv :)"), "channel", nil, "2")
+END
+VER 3 0000000000000070 "LF Officer" "INV_MISC_QUESTIONMARK"
+/2 LF Officer for guild. The candidate must be kind, mindful, willing to help and have a clear idea how to solve problems within the game. If you like challenges this is a good opportunity to put your skills to test. PST
+END
+VER 3 0000000000000027 "LFG" "2199765"
+/run SendChatMessage(SecureCmdOptionParse("Shielded Lions is recruiting. This is a casual guild for those who work, study or dont have much time to play. The perfect place to make friends and have a great time! Ask for an inv :)"), "channel", nil, "2")
+END
+VER 3 000000000000002C "Logro" "132305"
+/run SendChatMessage("Algun interesado en sacar el logro |cffffff00|Hachievement:1041:Player-1428-09DC7074:0:0:0:-1:6:0:0:0|h[Rotten Hallow]|h|r ? //wisp", "channel", nil, "1")
+END
+VER 3 0000000000000064 "LootFarm - Panda" "2000852"
+/p LOOT! LOOT!
+/p LOOT! LOOT!
+/pull 60
+END
+VER 3 0000000000000037 "Main Profile SUF" "2103795"
+/suf profile Main Profile
+END
+VER 3 000000000000003C "Milling" "237578"
+# showtooltip
+/cast Milling
+/use Talador Orchid
+/use Gorgrond Flytrap
+/use Frostweed
+/use Fireweed
+/use Nagrand Arrowbloom
+/use Starflower
+END
+VER 3 000000000000006D "Moonfire" "136048"
+/tar Misty
+/use Moonfire
+END
+VER 3 0000000000000065 "Moonfire Farm" "136048"
+/tar Ancient
+/use Moonfire
+END
+VER 3 0000000000000066 "Moonfire Farm" "136096"
+/tar Wailing
+/use Moonfire
+END
+VER 3 000000000000006B "Pity" "3069889"
+/pity
+END
+VER 3 0000000000000016 "Pull in 5" "1390945"
+/dbm pull 5
+END
+VER 3 000000000000001B "R" "INV_MISC_QUESTIONMARK"
+/run SendChatMessage(SecureCmdOptionParse("[mod:ctrl] ; Please do not Pull"),(UnitIsGroupLeader("player")or UnitIsGroupAssistant("player"))and"PARTY"or"INSTANCE_CHAT"or"RAID_WARNING", nil)
+END
+VER 3 000000000000001A "Ready check" "1411839"
+/readycheck
+END
+VER 3 0000000000000010 "Reload UI" "2203914"
+/afk Reloading UI
+/run SendChatMessage("Reloading my UI - AFK for a sec", "RAID", nil)
+/run SendChatMessage("Reloading my UI - AFK for a sec", "PARTY", nil)
+/reload
+END
+VER 3 0000000000000026 "Rematch" "2126354"
+/rematch
+END
+VER 3 000000000000003D "Rings" "1408445"
+#showtooltip
+/use 11
+/use 12
+END
+VER 3 0000000000000025 "Sell" "2201832"
+/run SendChatMessage("WTS |cff0070dd|Hbattlepet:1205:1:3:156:12:11:0000000000000000|h[Direhorn Runt]|h|r 4k; [Garn Nighthowl] 3k. PST", "channel", nil, "2")
+END
+VER 3 0000000000000068 "Signature" "1723997"
+/run SendChatMessage(SecureCmdOptionParse("Necesito firmas para nueva hermandad, pago 100g a cada uno. Por favor /w"), "channel", nil, "2")
+END
+VER 3 0000000000000075 "Slow Fall" "136103"
+/cleartarget
+/cast [@player]Slow Fall
+/tar [@party1]
+/changeactionbar 3
+/click ActionButton6
+/cleartarget
+/tar [@party2]
+/changeactionbar 3
+/click ActionButton6
+/cleartarget
+/tar [@party3]
+/changeactionbar 3
+/click ActionButton6
+END
+VER 3 0000000000000040 "Trinkets" "2356035"
+#showtooltip
+/use 13
+/use 14
+END
+VER 3 0000000000000030 "TSM Destroy" "135932"
+/TSM Destroy
+END
+VER 3 0000000000000062 "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMCancelAuctionBtn
+/click TSMDestroyBtn
+/click TSMShoppingBuyoutBtn
+/click TSMSniperBtn
+/click TSMAuctioningBtn
+/click TSMVendoringSellAllButton
+/click TSMCraftingBtn
+END
+VER 3 000000000000006A "Turn In" "135967"
+/target Elder
+/script SelectGossipAvailableQuest(1)
+/script CompleteQuest()
+/script GetQuestReward()
+END
+VER 3 0000000000000046 "Whistle" "132247"
+/whistle
+END

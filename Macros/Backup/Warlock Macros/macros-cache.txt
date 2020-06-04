@@ -1,0 +1,48 @@
+VER 3 0100000000000003 "Affliction" "136145"
+/equipset Affliction
+/run SetSpecialization(1)
+END
+VER 3 0100000000000006 "Chaos Bolt" "236291"
+#showtooltip
+/cleartarget
+/targetlasttarget
+/cast Chaos Bolt
+END
+VER 3 0100000000000004 "Conflagrate" "135807"
+#showtooltip
+/targetenemy
+/cast [target=pettarget,exists] Firebolt
+/cast [target=pettarget,exists] Suffering
+/cast [harm,exists] Conflagrate
+END
+VER 3 0100000000000001 "Demonology" "136172"
+/equipset Demonology
+/run SetSpecialization(2)
+END
+VER 3 0100000000000002 "Destruction" "136186"
+/equipset Destruction
+/run SetSpecialization(3)
+END
+VER 3 0100000000000009 "Healthstone" "538745"
+#showtooltip
+/use [button:2] Create Healthstone; Healthstone
+END
+VER 3 0100000000000007 "Immolate" "135817"
+#showtooltip
+/targetenemy
+/cast Immolate
+END
+VER 3 0100000000000005 "Incinarate" "135789"
+#showtooltip
+/cleartarget
+/targetlasttarget
+/cast Incinerate
+END
+VER 3 010000000000000A "RitualofSummonin" "136223"
+/aftercast /p Click the portal to get %t's lazy butt over here
+/cast Ritual of Summoning
+END
+VER 3 0100000000000008 "Soulstone" "136210"
+#showtooltip
+/use [button:2] Create Soulstone; Soulstone
+END

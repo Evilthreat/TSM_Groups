@@ -1,0 +1,81 @@
+VER 3 0100000000000007 "Balance" "136096"
+/equipset Balance
+/run SetSpecialization(1)
+END
+VER 3 010000000000000E "Cancel Aura" "135964"
+/cancelaura Blessing of Protection
+END
+VER 3 0100000000000011 "Cenarion Ward" "132137"
+#showtooltip Cenarion Ward
+/cast [@cursor,harm,nodead][@target][@focus]Cenarion Ward
+END
+VER 3 0100000000000008 "Feral" "132115"
+/equipset Feral
+/run SetSpecialization(2)
+END
+VER 3 0100000000000005 "Force of Nature" "132129"
+#showtooltip
+/cast [@cursor] Force of Nature
+END
+VER 3 0100000000000015 "GRM_Roster" "inv_bannerpvp_02"
+/run GuildFrame_Toggle()
+/run GuildFrame_TabClicked ( GuildFrameTab2 )
+END
+VER 3 0100000000000010 "Growl" "132270"
+#showtooltip Growl
+/cast [@target]Growl
+END
+VER 3 0100000000000009 "Guardian" "132276"
+/equipset Guardian
+/run SetSpecialization(3)
+END
+VER 3 0100000000000003 "Innervate" "136048"
+#showtooltip Innervate
+/cast [@cursor,exists] innervate
+END
+VER 3 0100000000000001 "Rebirth" "136080"
+#showtooltip Rebirth
+/cast [@cursor,help]Rebirth;Rebirth
+END
+VER 3 010000000000000B "Regrowth" "136085"
+#showtooltip Regrowth
+/console autounshift 0
+/cast [@cursor][@target][@focus]Regrowth
+/console autounshift 1
+/use 3
+END
+VER 3 0100000000000012 "Rejuvenation" "136081"
+#showtooltip Rejuvenation
+/console autounshift 0
+/cast [@cursor][@target][@focus]Rejuvenation
+/console autounshift 1
+/use 3
+END
+VER 3 0100000000000002 "RemoveCorruption" "135952"
+#showtooltip Remove Corruption
+/cast [@cursor,help,nodead][target=target] Remove Corruption
+END
+VER 3 010000000000000A "Restoration" "132145"
+/equipset Restoration
+/run SetSpecialization(4)
+END
+VER 3 0100000000000014 "Revive" "132132"
+#showtooltip Revive
+/cast [@cursor][@target][@focus]Revive
+END
+VER 3 010000000000000C "Skull Bash" "236946"
+#showtooltip
+/stopcasting
+/cast [@focus,exists][@target] Skull Bash
+END
+VER 3 0100000000000004 "Starfall" "236168"
+#showtooltip Starfall
+/cast [@target] Starfall
+END
+VER 3 0100000000000013 "Swiftmend" "134914"
+#showtooltip Swiftmend
+/console autounshift 0
+/cast [@cursor][@target][@focus]Swiftmend
+/console autounshift 1
+/use 3
+END

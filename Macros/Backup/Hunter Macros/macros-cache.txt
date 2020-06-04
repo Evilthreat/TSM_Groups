@@ -1,0 +1,17 @@
+VER 3 0100000000000001 "Beast Mastery" "2021577"
+/equipset Beast Mastery
+/run SetSpecialization(1)
+END
+VER 3 0100000000000004 "Dismiss Pet" "135911"
+/target pet
+/bye
+/petdismiss
+END
+VER 3 0100000000000002 "Marksmanship" "236179"
+/equipset Marksmanship
+/run SetSpecialization(2)
+END
+VER 3 0100000000000003 "Survival" "132089"
+/equipset Survival
+/run SetSpecialization(3)
+END

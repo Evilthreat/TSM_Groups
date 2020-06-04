@@ -1,0 +1,101 @@
+VER 3 0100000000000006 "Arcane" "135932"
+/equipset Arcane
+/run SetSpecialization(1)
+END
+VER 3 0100000000000005 "Blazing Barrier" "132221"
+#showtooltip
+/cast Blazing Barrier
+/cleartarget
+/targetenemy
+/cast Counterspell
+END
+VER 3 0100000000000007 "Fire" "135812"
+/equipset Fire
+/run SetSpecialization(2)
+END
+VER 3 0100000000000012 "Flurry" "1506795"
+#showtooltip
+/cleartarget
+/targetenemy
+/cast Flurry
+END
+VER 3 0100000000000008 "Frost" "135846"
+/equipset Frost
+/run SetSpecialization(3)
+END
+VER 3 0100000000000011 "Frostbolt" "135846"
+#showtooltip
+/cleartarget
+/targetenemy
+/cast Frostbolt
+END
+VER 3 0100000000000001 "Ice Barrier" "135988"
+#showtooltip
+/cast [@player]Ice Barrier
+/cleartarget
+/targetenemy
+/cast [@target,exists]Counterspell
+END
+VER 3 010000000000000A "Ice Block" "135841"
+#showtooltip
+/stopcasting
+/cancelaura Ice Block
+/cast Ice Block
+END
+VER 3 0100000000000015 "Ice Lance" "135844"
+#showtooltip
+/cleartarget
+/targetenemy
+/cast Ice Lance
+END
+VER 3 010000000000000F "Invisibility" "132220"
+#showtooltip
+/stopcasting
+/cancelaura Invisibility
+/cast Invisibility
+END
+VER 3 0100000000000016 "Mage Table" "134029"
+#showtooltip
+/run SendChatMessage("Mage Table", "RAID", nil)
+/run SendChatMessage("Mage Table", "PARTY", nil)
+/cast Conjure Refreshment
+END
+VER 3 0100000000000004 "Polymorph" "136071"
+#showtooltip
+/stopcasting
+/clearfocus [mod:shift][@focus,dead][@focus,noexists]  
+/focus [@focus,noexists]  
+/cast [@focus] Polymorph
+END
+VER 3 0100000000000003 "PrismaticBarrier" "135991"
+#showtooltip
+/cast Prismatic Barrier
+/cleartarget
+/targetenemy
+/cast Counterspell
+END
+VER 3 0100000000000010 "Remove Curse" "136082"
+#showtooltip
+/stopcasting
+/cast [help][@player][@focus][@target]Remove Curse
+END
+VER 3 0100000000000009 "Shimmer" "135739"
+#showtooltip
+/stopcasting
+/cast Blink
+END
+VER 3 0100000000000014 "Slow Fall" "135992"
+#showtooltip
+/cast [@player] Slow Fall
+/tar [@party1]
+/cast [@target] Slow Fall
+/cleartarget
+/tar [@party2]
+/cast [@target] Slow Fall
+/cleartarget
+/tar [@party3]
+/cast [@target] Slow Fall
+/cleartarget
+/tar [@party4]
+/cast [@target]Snow Fall
+END

@@ -1,0 +1,24 @@
+VER 3 0100000000000001 "Discipline" "135940"
+/equipset Discipline
+/run SetSpecialization(1)
+END
+VER 3 0100000000000002 "Holy" "237542"
+/equipset Holy
+/run SetSpecialization(2)
+END
+VER 3 0100000000000003 "Shadow" "136207"
+/equipset Shadow
+/run SetSpecialization(3)
+END
+VER 3 0100000000000004 "Shadow Crash" "136201"
+#showtooltip
+/cast [@target][@focus] Shadow Crash
+END
+VER 3 0100000000000005 "Shadow Word:Pain" "136207"
+#showtooltip Shadow Word: Pain
+/cast [@target][@focus] Shadow Word: Pain
+END
+VER 3 0100000000000006 "Vampiric Touch" "135978"
+#showtooltip Vampiric Touch
+/cast [@mouseover,harm,nodead][]Vampiric Touch
+END

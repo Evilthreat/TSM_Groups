@@ -1,0 +1,12 @@
+VER 3 0100000000000001 "Holy" "135920"
+/equipset Holy
+/run SetSpecialization(1)
+END
+VER 3 0100000000000002 "Protection" "236264"
+/equipset Protection
+/run SetSpecialization(2)
+END
+VER 3 0100000000000003 "Retribution" "135873"
+/equip Retribution
+/run SetSpecialization(3)
+END

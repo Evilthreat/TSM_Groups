@@ -1,0 +1,81 @@
+﻿Macros:   (Tested) Working on WoW 8.0.1
+-------
+Hide Chat Frame (Without Buttons)
+---------------------------------
+/run _CHATHIDE=not _CHATHIDE for i=1,NUM_CHAT_WINDOWS do for _,v in pairs{"","Tab"}do local f=_G["ChatFrame"..i..v]if _CHATHIDE then f.v=f:IsVisible()end f.ORShow=f.ORShow or f.Show f.Show=_CHATHIDE and f.Hide or f.ORShow if f.v then f:Show()end end end
+
+Change Character Specs:  [/run SetSpecialization(#)]
+-----------------------
+/equipset Fury
+/run SetSpecialization(1)
+
+DBM commands: 
+-------------
+/dbm – shows/hides the GUI
+/dbm timer <time> <name> – starts a local timer, the time can be in the mm:ss format
+/dbm broadcast timer <time> <name> – broadcasts a timer to the raid
+/dbm unlock – shows a movable timer bar (alias: move)
+/dbm ver – performs a raid-wide version check
+/range or /distance – shows the RangeCheck frame
+/dbm pull <time> (seconds)
+/dbm break <time> (minutes)
+
+Hide Chat Button:
+-----------------
+/run local r=ChatFrameMenuButton if r:IsShown()then r:Hide()else r:Show();end
+
+Hide Quests:
+------------
+/run local n=ObjectiveTrackerFrame if n:IsVisible()then n:Hide();else n:Show();end
+
+Ready check:
+------------
+/readycheck
+
+Reload UI:
+----------
+/afk reloading UI
+/run SendChatMessage("reloading my UI - afk for a sec", ((UnitInRaid("player")and "RAID")or(GetNumPartyMembers()>0 and "PARTY")or "AFK")); 
+/reload
+
+Kill Target Marked:
+-------------------
+/script SetRaidTargetIcon("target",8)
+
+Mark Target to follow:
+----------------------
+/script SetRaidTargetIcon("target",4)
+
+Sell on Trade Channel:
+----------------------
+/run SendChatMessage("Sell [Quick Golden Beryl], [Versatile Kyanite] and more! //wisp", "channel", nil, "2")
+
+**To insert a link on a Macro:**
+On chat panel type: /script MacroFrameText:Insert("[Link of Item]")
+
+Message
+-------
+/run SendChatMessage(SecureCmdOptionParse("[mod:ctrl]Low on Mana, please wait;Ty all"),(UnitIsGroupLeader("player")or UnitIsGroupAssistant("player"))and"RAID_WARNING"or"INSTANCE_CHAT")
+
+
+
+Sites:
+-------
+https://www.wowhead.com/making-a-macro-commands-modifiers-warcraft-guide
+http://www.macroexplain.com/#none
+http://www.wowhead.com/forums&topic=128550
+http://es.wowhead.com/making-a-macro-commands-modifiers-warcraft-guide
+https://us.battle.net/forums/en/wow/topic/16200990425
+https://eu.battle.net/forums/en/wow/topic/3225373977
+https://wow.gamepedia.com/Macro_commands
+http://wowwiki.wikia.com/wiki/Making_a_macro
+https://eu.battle.net/forums/en/wow/topic/6160898728?page=2
+http://www.wowinterface.com/forums/showthread.php?t=14898
+https://www.reddit.com/r/wow/comments/4wx2su/help_with_hiding_chat_window_macro/
+https://www.mmo-champion.com/threads/2080316-Chat-Hide-Show-with-quot-Enter-quot
+https://addon.bool.no/
+http://www.wowhead.com/forums&topic=254355&p=4067149
+http://wowwiki.wikia.com/wiki/Useful_macros
+http://wowwiki.wikia.com/wiki/Mount_Macros
+https://us.battle.net/forums/en/wow/topic/20758236906
+https://wow.gamepedia.com/Useful_macros#Gear_By_iLevel
